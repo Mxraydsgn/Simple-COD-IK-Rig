@@ -7,6 +7,7 @@ _𝚌𝚛𝚎𝚊𝚝𝚎𝚍 𝚋𝚢 𝙼𝚡𝚛𝚊𝚢𝙳𝚂𝙽𝙶 & �
 </picture>
 
 # **INSTRUCTION**
+<img src="https://i.imgur.com/mDHvZ0I.png">
 There are two folders with scripts:
 
 1. Detailed - contains three scripts:
