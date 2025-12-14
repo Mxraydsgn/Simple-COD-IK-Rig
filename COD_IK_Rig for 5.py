@@ -113,16 +113,16 @@ HandIKPrep("j_shoulder_le", -2.6/180*3.141, "j_elbow_le", -20/180*3.141, "ElbowP
 
 
 
-Edit_bones["j_thumb_ri_3"].length = 3.6
-Edit_bones["j_index_ri_3"].length = 2.6
-Edit_bones["j_mid_ri_3"].length = 3
-Edit_bones["j_ring_ri_3"].length = 3
-Edit_bones["j_pinky_ri_3"].length = 2.7
-Edit_bones["j_thumb_le_3"].length = 3.6
+Edit_bones["j_thumb_ri_3"].length = -3.6
+Edit_bones["j_index_ri_3"].length = -2.6
+Edit_bones["j_mid_ri_3"].length = -3
+Edit_bones["j_ring_ri_3"].length = -3
+Edit_bones["j_pinky_ri_3"].length = -2.7
+Edit_bones["j_thumb_le_3"].length = -3.6
 Edit_bones["j_index_le_3"].length = 2.6
-Edit_bones["j_mid_le_3"].length = 3
-Edit_bones["j_ring_le_3"].length = 3
-Edit_bones["j_pinky_le_3"].length = 2.7
+Edit_bones["j_mid_le_3"].length = -3
+Edit_bones["j_ring_le_3"].length = -3
+Edit_bones["j_pinky_le_3"].length = -2.7
 
 Edit_bones["j_pinky_le_1"].roll = 260 / 180 * 3.141
 Edit_bones["j_pinky_le_2"].roll = 303 / 180 * 3.141
@@ -377,7 +377,7 @@ source_bones = [
     "j_pinky_le_3", "j_pinky_ri_3",
 ]
 
-extrude_length = 1.0
+extrude_length = -1.0
 
 armature = bpy.context.object
 if armature is None or armature.type != 'ARMATURE':
@@ -400,7 +400,7 @@ for bone_name in source_bones:
 
     direction = (bone.tail - bone.head).normalized()
 
-    new_bone.tail = bone.tail + direction * extrude_length
+    new_bone.tail = bone.tail - direction * extrude_length
 
 
     new_bone.parent = bone
