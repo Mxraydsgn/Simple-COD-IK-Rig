@@ -119,7 +119,7 @@ Edit_bones["j_mid_ri_3"].length = -3
 Edit_bones["j_ring_ri_3"].length = -3
 Edit_bones["j_pinky_ri_3"].length = -2.7
 Edit_bones["j_thumb_le_3"].length = -3.6
-Edit_bones["j_index_le_3"].length = 2.6
+Edit_bones["j_index_le_3"].length = -2.6
 Edit_bones["j_mid_le_3"].length = -3
 Edit_bones["j_ring_le_3"].length = -3
 Edit_bones["j_pinky_le_3"].length = -2.7
@@ -1262,3 +1262,4 @@ for pb in arm.pose.bones:
     pb.hide = pb.name not in visible_bones
 
 print("Готово: ненужные кости скрыты.")
+
