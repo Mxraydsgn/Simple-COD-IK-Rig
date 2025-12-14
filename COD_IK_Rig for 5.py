@@ -424,7 +424,7 @@ bone_pairs = {
     "j_wrist_le": "j_wrist_le_ik",
     "j_wrist_ri": "j_wrist_ri_ik"
 }
-offset_z = 2.0
+offset_z = -10.0
 
 def create_ik_bone(src_name, ik_name, offset_z):
     if src_name not in edit_bones:
@@ -1262,4 +1262,5 @@ for pb in arm.pose.bones:
     pb.hide = pb.name not in visible_bones
 
 print("Готово: ненужные кости скрыты.")
+
 
